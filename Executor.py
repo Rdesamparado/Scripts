@@ -12,7 +12,7 @@ if __name__ == '__main__':
     time.sleep(1)
     channel.send('Tyler/34\n')
     time.sleep(1)
-    channel.send('py sshTools4.py 149235\n >> testobject1.txt')
+    channel.send('py sshTools4.py 149235\n && testobject1.txt')
     time.sleep(2)    
     cmd = 'cat /root/fs/testobject1.txt'
     stdin, stdout, stderr = sesh.exec_command(cmd)
